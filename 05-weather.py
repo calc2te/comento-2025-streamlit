@@ -58,10 +58,6 @@ def get_weather():
 def main():
     st.title('서울 날씨 정보 & 옷차림 추천')
 
-    # 새로고침 버튼
-    if st.button('날씨 새로고침'):
-        st.experimental_rerun()
-
     try:
         weather_info = get_weather()
 
